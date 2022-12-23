@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal computer</title>
+    <style>
+      .main {
+        width: 400px;
+        margin: 0 auto;
+        padding: 10px 50px;
+        display: block;
+        border: 10px solid #fcfafa;
+      }
+      h1 {
+        text-align: center;
+        color: #662eed;
+        font-weight: 100px;
+      }
+      h2 {
+        text-align: center;
+        padding: 10px;
+        border: 3px solid #ffe3b0;
+        font-weight: 100px;
+        color: #c24d2c;
+      }
+      h3 {
+        padding: 20px;
+        border: 1px solid #662eed;
+        width: 358px;
+        margin: 0 auto;
+        display: block;
+        border-radius: 0 0 12px 12px;
+        font-size: 30px;
+        opacity: 0.7;
+      }
+      span {
+        margin-left: 20px;
+      }
+      img {
+        margin: 0 auto;
+        display: block;
+        height: 300px;
+        width: 400px;
+        border-radius: 12px 12px 0 0;
+
+        background-color: #662eed;
+      }
+      button {
+        margin: 0 auto;
+        padding: 12px 50px;
+        border: 1px solid #ccc;
+        border-radius: 22px;
+        box-shadow: 8px 12px 12px #ccc;
+        transition: all 200ms ease-in-out;
+        cursor: pointer;
+        /* width: 180px; */
+        display: block;
+        background-color: #662eed;
+        font-size: 22px;
+      }
+      button:hover {
+        background-color: #fff;
+        color: #662eed;
+      }
+
+      p {
+        text-align: justify;
+        margin-top: 20px;
+        font-size: 24px;
+      }
+      #about {
+        font-size: 16px;
+        margin-top: 32px;
+      }
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        color: #ff0000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1>Get Your Personal Computer At Affordable Pice</h1>
+      <h2>We Are Always At Your Service</h2>
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/973/original/download.jpg?1671706781" alt="" />
+      <h3>price <span>$40</span></h3>
+      <p>
+        This laptop has <strong><em>4GB Ram</em></strong> and <strong><em>900GB disk storage</em></strong> with <strong><em>2.6GHz</em></strong> of proccessor speed. if the device does not match it specifications, kindly get in touch with us. The device has a warranty period of <strong><em>one year</em></strong
+        >. Your comfort is our utmost priority
+      </p>
+      <button>BUY</button><br />
+      <p id="about">Coded by <a href="https://github.com/ndaleghnoelalummbah" target="_blank">Ndalegh Noela</a></p>
+      <hr />
+    </div>
+
+    <script>
+      function purchase() {
+        let name = prompt("please enter your name");
+        let email = prompt("please enter your email");
+        if (name.trim() != 0 && email.trim() != 0 && (email.endsWith("@gmail.com") == 1 || email.endsWith("yahoo.com") == 1) && email.startsWith("@gmail.com") == 0 && email.startsWith("yahoo.com") == 0) alert(`Dear ${name}, an electronic receipt will be sent to ${email} right after the purchase.`);
+        else alert("Please identify your self");
+      }
+
+      let button = document.querySelector("button");
+      button.addEventListener("click", purchase);
+    </script>
+  </body>
+</html>
