@@ -5,11 +5,11 @@ This is an end project excercise after a two weeks training with shecodes
 
 ### The Challenge was to build any simple landing page making use of html tags,css styles and javascript
 
-###screenshots
+### screenshots
 
 ![screen capture](./images/capture.png)
 
-###some codes on javascript which I used
+### some codes on javascript which I used
 
 ```function purchase() {
         let name = prompt("please enter your name");
